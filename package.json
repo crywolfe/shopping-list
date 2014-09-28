@@ -1,0 +1,24 @@
+{
+  "name": "shopping-list",
+  "version": "0.0.0",
+  "description": "shopping list",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crywolfe/shopping-list.git"
+  },
+  "author": "Gerry Wolfe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crywolfe/shopping-list/issues"
+  },
+  "homepage": "https://github.com/crywolfe/shopping-list",
+  "dependencies": {
+    "package-name": "1.0.0",
+    "another-one": "0.5.2"
+  }
+}
