@@ -1,0 +1,23 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crywolfe/shopping-list.git"
+  },
+  "author": "Gerry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crywolfe/shopping-list/issues"
+  },
+  "homepage": "https://github.com/crywolfe/shopping-list",
+  "dependencies": {
+    "mongoose": "^3.8.16"
+  }
+}

@@ -1,0 +1,19 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/Users/MB/.node/bin/npm', 'start' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 verbose config Skipping project config: /Users/MB/.npmrc. (matches userconfig)
+6 verbose stack Error: ENOENT, open '/Users/MB/package.json'
+7 verbose cwd /Users/MB/dev/thinkful/shopping-list
+8 error Darwin 13.4.0
+9 error argv "node" "/Users/MB/.node/bin/npm" "start"
+10 error node v0.10.32
+11 error npm  v2.0.0
+12 error path /Users/MB/package.json
+13 error code ENOENT
+14 error errno 34
+15 error ENOENT, open '/Users/MB/package.json'
+16 error If you need help, you may report this error at:
+16 error     <http://github.com/npm/npm/issues>
+17 verbose exit [ 34, true ]
