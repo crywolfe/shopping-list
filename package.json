@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/crywolfe/shopping-list",
   "dependencies": {
-    "package-name": "1.0.0",
-    "another-one": "0.5.2"
+    "another-one": "0.5.2",
+    "mongoose": "^3.8.16",
+    "package-name": "1.0.0"
   }
 }
