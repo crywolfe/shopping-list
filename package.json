@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/crywolfe/shopping-list",
   "dependencies": {
-    "mongoose": "^3.8.16",
+    "mongoose": "^3.8.16"
   }
 }
