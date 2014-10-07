@@ -1,12 +1,14 @@
+var db = require('./db');
 var mongoose = require('mongoose');
 
-var itemSchema = mongoose.Schema({item:String})
+var itemSchema = mongoose.Schema({item:String});
+var tasteSchema = mongoose.Schema({taste:String});
 
 var Item = mongoose.model('Item', itemSchema);
 
-
 exports.create = function(req, res){
-	if (!req.param('item')) {
+	console.log(req.body);
+	if (!req.param('item') || !req.param('taste')) {
 		res.send('Item not valid');
 		res.statusCode = 400;
 	} else {
@@ -15,6 +17,12 @@ exports.create = function(req, res){
 		item.save(function(err,item){
 			if (err) return console.error(err);
 			res.send("adding " + item);
+		});
+		var taste = new Taste({taste: req.param('taste')});
+		console.log(taste);
+		taste.save(function(err,taste){
+			if (err) return console.error(err);
+			res.send("adding " + taste);
 		});
 		//
 		// items.push(req.param('item'));
@@ -30,7 +38,7 @@ exports.retrieveAll = function(req, res){
 	Item.find(function(err,items){
 		if (err) return console.error(err);
 		res.send(items);
-	})
+	});
 };
 
 exports.retrieveOne = function(req, res) {
@@ -48,7 +56,7 @@ exports.retrieveOne = function(req, res) {
 	// else {
 	// 	res.send("item not found");
 	// }
-}
+};
 
 exports.update = function(req, res) {
 	Item.findByIdAndUpdate(mongoose.Types.ObjectId(req.param('id')), {'item':req.param('item')}, function (err, result) {
